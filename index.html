@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="Clear the field by removing groups of more than one colored square; the larger the group you remove, the more points you get.">
+  <meta name="copyright" content="Copyright (c) 2017 Gabor Bata">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@gabor_bata">
+  <meta name="twitter:creator" content="@gabor_bata">
+  <meta property="og:title" content="samegame1k">
+  <meta property="og:description" content="Clear the field by removing groups of more than one colored square; the larger the group you remove, the more points you get.">
+  <meta property="og:type" content="game">
+  <meta property="og:url" content="http://gaborbata.github.io/samegame1k/">
+  <meta property="og:image" content="http://gaborbata.github.io/samegame1k/samegame1k.png">
+  <title>samegame1k</title>
+
+  <style type="text/css">
+    body {
+      background-color: #fff;
+      margin: 0;
+    }
+
+    #wrapper {
+      display: table;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+
+    #container {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    #a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      display: block;
+      height: 288px;
+      margin: 0 auto;
+      width: 528px;
+    }
+
+    #footer {
+      bottom: 0;
+      color: #999;
+      font-family: sans-serif;
+      font-size: 12px;
+      height: 30px;
+      left: 0;
+      position: fixed;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+
+  <div id="footer">
+    samegame1k | js1k-2017 | &copy; Gabor Bata
+  </div>
+
+  <div id="wrapper">
+    <div id="container">
+      <canvas id="a" width="528" height="288"></canvas>
+    </div>
+  </div>
+
+  <script src="samegame1k.min.js"></script>
+</html>

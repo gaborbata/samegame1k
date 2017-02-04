@@ -1,0 +1,4 @@
+*.* text eol=lf
+samegame1k.min.js binary
+optimization-phases/04-samegame1k-regpack.js binary
+*.png binary
