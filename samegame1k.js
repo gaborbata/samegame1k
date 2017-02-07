@@ -70,8 +70,8 @@
             x = i * TILE + BORDER,
             y = j * TILE + BORDER;
         // add simple bevel effect
-        rect(c + 5, x, y, TILE); // brighter color (light)
-        rect(c + 10, x, y, TILE - 1); // darker color (shadow)
+        rect(c + 5, x, y, TILE); // darker color (shadow)
+        rect(c + 10, x, y, TILE - 1); // brighter color (light)
         rect(c + h * 10, x + 1, y + 1, TILE - 2); // base tile color
         // show marker rectangle
         if (h) {
