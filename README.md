@@ -7,6 +7,8 @@ for the [JS1k 2017](http://js1k.com/2017-magic/) JavaScript code golfing competi
 
 The goal of the competition is to create a fancy JavaScript demo up to 1024 bytes.
 
+![samegame1k](https://raw.githubusercontent.com/gaborbata/samegame1k/master/samegame1k-screenshot.png)
+
 ## Game Description
 
 Clear the field by removing groups of more than one colored square;
