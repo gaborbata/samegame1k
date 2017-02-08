@@ -43,7 +43,7 @@
     // color indices (c):
     // 0-4: base, removed tile (1) + tiles (4)
     // 5-9: darker, removed (1) + tiles (4)
-    // 10-14: brigther, removed (1) + tiles (4)
+    // 10-14: brighter, removed (1) + tiles (4)
     // 15: canvas background
     context.fillStyle = '#' + '336c65aba58cfb7113732555245753449f87eee9cffea224'.substr(c * 3, 3);
     context.fillRect(x, y, w, h);

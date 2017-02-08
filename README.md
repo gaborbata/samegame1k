@@ -36,7 +36,7 @@ Description                                     | Before                        
 ----------------------------------------------- | --------------------------------- | -----------------------------
 Element IDs are registered on the window object | `document.getElementById('a')`    | `window['a']`
 Define event handler as object property         | `a.addEventListener('click',b);`  | `a.onclick=b;`
-Elminate `Math.floor` with `~~`                 | `Math.floor(a+b);`                | `~~(a+b);`
+Eliminate `Math.floor` with `~~`                | `Math.floor(a+b);`                | `~~(a+b);`
 Multiply by boolean instead of conditionals     | `a?10:5;`                         | `a*5+5;`
 Embed functionality within arguments            | `a=1;b();`                        | `b(a=1);`
 Use `for` over `while`                          | `i=true;while(i)`                 | `for(i=true;i;)`
@@ -48,7 +48,7 @@ Use string instead of array for color codes     | `['#aaa','#bbb'][i];`         
 Use function params instead of variables        | `()=>{for(let a=100;a--;)}`       | `(a)=>{for(a=100;a--;)}`
 Use default parameter values (ES6)              | `a=(x,y)=>{...};a(100,100);`      | `a=(x,y=x)=>{...};a(100);`
 Use string interpolation (ES6)                  | `a='...'+b+'...';`                | ``a=`...${b}...`;``
-Use expession body instead of statement (ES6)   | `()=>{a=1;return b}`              | `()=>(a=1)&&b;`
+Use expression body instead of statement (ES6)  | `()=>{a=1;return b}`              | `()=>(a=1)&&b;`
 
 ### Tools
 
