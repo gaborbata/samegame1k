@@ -69,5 +69,44 @@
     </div>
   </div>
 
+  <script src="picoModal-3.0.0.min.js"></script>
+
+  <script>
+    picoModal({
+      content: function() {
+        var metas = document.getElementsByTagName("meta");
+        var content = [];
+        for (var i = 0; i < metas.length; i++) {
+          if (["og:title", "og:description"].includes(metas[i].getAttribute("property"))) {
+            content.push(metas[i].getAttribute("content"));
+          }
+        }
+        return content.join('<br>');
+      },
+      closeStyles: function(styles) {
+        styles.borderRadius = "0";
+        styles.fontFamily = "sans-serif";
+        styles.fontSize = "20px";
+        styles.height = "20px";
+        styles.lineHeight = "18px";
+        styles.outline = "none";
+        styles.width = "20px";
+        return styles;
+      },
+      modalStyles: function(styles) {
+        styles.border = "4px solid #262c4b";
+        styles.borderRadius = "0";
+        styles.color = "#444";
+        styles.fontFamily = "sans-serif";
+        styles.fontSize = "16px";
+        styles.maxWidth = "400px";
+        styles.top = "50%";
+        styles.transform = "translate(-50%, -50%)";
+        styles.width = "90%";
+        return styles;
+      }
+    }).show();
+  </script>
+
   <script src="samegame1k.min.js"></script>
 </html>
